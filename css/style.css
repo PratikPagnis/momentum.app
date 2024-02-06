@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 2px #86868621;
+  box-shadow: inset 0 0 0 99999px rgb(0 0 0 / 10%);
+}
+
+body .overlay {
+  box-shadow: inset 0 0 0 99999px rgb(0 0 0 / 10%);
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.middle {
+  text-align: center;
+}
+
+/* .tabs {
+  width: 30%;
+  display: inline-flex;
+  text-align: center;
+  justify-content: space-around;
+  border: 1px solid white;
+  border-radius: 40px;
+  background: linear-gradient(#fff, #fff) no-repeat center/1px 80%;
+  cursor: pointer;
+  background-color: #d6d6d65e;
+} */
+
+/* button {
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+} */
+
+.greeting {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+div.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1#time {
+  font-size: 100px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: -14px;
+  padding: 0;
+}
+
+span#date {
+  font-size: 30px;
+}
+
+p > i, summary > i {
+  background: #d6d6d65e;
+  padding: 10px;
+  border-radius: 20px;
+}

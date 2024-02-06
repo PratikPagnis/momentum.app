@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/music.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/tooltip.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+  </head>
+  <body class="overlay">
+    <main>
+      <div class="top">
+        <details data-text="StopWatch" class="tooltip">
+          <summary><i class="ri-timer-line"></i></summary>
+          <div class="pop-bottom">
+            <div class="timer1"></div>
+          </div>
+        </details>
+        <div id="weather"></div>
+      </div>
+
+      <div class="middle">
+        <!-- <div class="tabs">
+          <button>Watch</button>
+          <button>StopWatch</button>
+        </div> -->
+        <div>
+          <h1 id="time" class="time"></h1>
+          <span id="date"></span>
+          <!-- <p class="greeting">Good morning!</p> -->
+        </div>
+        <div></div>
+      </div>
+
+      <div class="bottom">
+        <details data-text="Music" class="tooltip">
+          <summary><i class="ri-music-2-line"></i></i></summary>
+          <div>
+            <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+              <!-- <source src="audio.ogg" type="audio/ogg"> -->
+              <source id="source-audio" src="" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="player-ctn">
+              <div class="infos-ctn">
+                <div class="timer">00:00</div>
+                <div class="title"></div>
+                <div class="duration">00:00</div>
+              </div>
+              <div id="myProgress">
+                <div id="myBar"></div>
+              </div>
+              <div class="btn-ctn">
+                 <div class="btn-action first-btn" onclick="previous()">
+                    <div id="btn-faws-back">
+                      <i class="ri-skip-back-line"></i>
+                    </div>
+                 </div>
+                 <div class="btn-action" onclick="rewind()">
+                    <div id="btn-faws-rewind">
+                      <i class="ri-rewind-line"></i>
+                    </div>
+                 </div>
+                 <div class="btn-action" onclick="toggleAudio()">
+                    <div id="btn-faws-play-pause">
+                      <i class="ri-play-line" id="icon-play"></i>
+                      <i class="ri-pause-line" id="icon-pause" style="display: none"></i>
+                    </div>
+                 </div>
+                 <div class="btn-play" onclick="forward()">
+                    <div id="btn-faws-forward">
+                      <i class="ri-speed-line"></i>
+                    </div>
+                 </div>
+                 <div class="btn-action" onclick="next()">
+                    <div id="btn-faws-next">
+                      <i class="ri-skip-forward-line"></i>
+                    </div>
+                 </div>
+                 <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+                    <div id="btn-faws-volume">
+                      <i id="icon-vol-up" class="ri-volume-up-line"></i>
+                      <i id="icon-vol-mute" class="ri-volume-mute-line" style="display: none"></i>
+                    </div>
+                 </div>
+              </div>
+              <div class="playlist-ctn"></div>
+            </div>
+          </div>
+        </details>
+        <p id="quotes"></p>
+        <details data-text="ToDo List" class="tooltip tip-left">
+          <summary><i class="ri-list-check-3"></i></summary>
+          <div class="pop-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            consequuntur non quia ex magnam esse commodi assumenda ipsa velit
+            itaque dolore, modi rerum sed omnis laborum placeat iste cumque
+            mollitia.
+          </div>
+        </details>
+      </div>
+    </main>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/timer.js"></script>
+  </body>
+</html>

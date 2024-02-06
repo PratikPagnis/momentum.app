@@ -1,0 +1,21 @@
+div#weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-self: flex-start;
+  line-height: 0;
+}
+
+div#weather > .temp {
+  font-size: 28px;
+}
+
+div#weather > img {
+  width: 50px;
+}
+
+div#weather > .city {
+  width: 100%;
+  text-align: right;
+}
